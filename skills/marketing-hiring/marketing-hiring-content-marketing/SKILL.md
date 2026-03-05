@@ -1,6 +1,6 @@
 ---
 name: "marketing-hiring-content-marketing"
-description: "Content marketers create and distribute valuable content that attracts, educates, and retains audiences. The best content marketers think like publishers — editorial strategy, audience research, distribution, and performance measurement — n"
+description: "Content marketers create and distribute valuable content that attracts, educates, and retains audiences. The best content marketers think like publishers — editorial strategy, audience research, distribution, and performance measurement — not just writers."
 ---
 
 # Content Marketing — Hiring Guide

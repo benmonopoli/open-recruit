@@ -1,6 +1,6 @@
 ---
 name: "sales-hiring-sdr-bdr"
-description: "SDRs and BDRs generate qualified pipeline through outbound prospecting and/or inbound lead qualification. They book meetings for Account Executives — they do not close deals. The SDR role is the entry point to most B2B sales careers and a p"
+description: "SDRs and BDRs generate qualified pipeline through outbound prospecting and/or inbound lead qualification. They book meetings for Account Executives — they do not close deals. The SDR role is the entry point to most B2B sales careers and a proving ground for future Account Executives."
 ---
 
 # Sales Development Representative (SDR) / Business Development Representative (BDR) — Hiring Guide

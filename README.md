@@ -101,20 +101,31 @@ From that point the AI isn't working from general knowledge — it's working fro
 
 ## Getting started
 
-### Install as a plugin (recommended)
+These skills are designed for use with [Claude](https://claude.ai) by Anthropic — specifically [Claude Code](https://claude.ai/code), Anthropic's CLI tool that supports loading skills directly.
+
+### Install as a plugin (one command)
+
+If you're using Claude Code, run this in your terminal:
 
 ```bash
 /plugin install benmonopoli/open-recruit
 ```
 
-### Manual install
+This installs the full library in one shot. Once installed, the relevant skill loads automatically based on what you ask — no manual selection needed.
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/benmonopoli/open-recruit.git
-   ```
-2. Copy the skills you need into your AI tool's skills directory
-3. Load a skill and start using it
+### Use individual skills manually
+
+If you'd prefer to use specific skills without installing the full library:
+
+1. Browse the `skills/` folder above and find the skill you want
+2. Open the `SKILL.md` file and copy the contents
+3. Paste it at the start of your conversation with Claude as context
+
+### Not sure where to start?
+
+- **Sourcing a candidate?** Try `linkedin-recruiting`, `github-sourcing`, or `web-sourcing`
+- **Hiring for a specific role?** Find the relevant discipline under `tech-hiring/`, `marketing-hiring/`, or `sales-hiring/`
+- **Writing JDs or outreach?** Try `ai-recruiting-prompts`
 
 ---
 
@@ -122,10 +133,13 @@ From that point the AI isn't working from general knowledge — it's working fro
 
 The library covers what I hire for — there are plenty of disciplines it doesn't touch. If you've built skills that work for your recruiting context, contributions are welcome.
 
+The best skills are built the same way these were — by synthesising the best available knowledge for that discipline into a reusable format, not just personal opinion. If you've hired in an area not covered here and want to contribute, open a pull request or drop me a message.
+
+To add a skill:
 1. Create a folder under the appropriate category in `skills/`
 2. Add a `SKILL.md` file with your skill's instructions
-3. Include YAML frontmatter with `name` and `description` fields at the top
-4. Open a pull request with a clear description of what the skill does
+3. Include a `name` and `description` at the top of the file
+4. Open a pull request with a short description of what the skill does and how you've used it
 
 If you've built something useful in a different format or for a different platform, open an issue and let's figure out how it fits.
 
