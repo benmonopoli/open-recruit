@@ -104,14 +104,14 @@ From that point the AI isn't working from general knowledge — it's working fro
 ### Install as a plugin (recommended)
 
 ```bash
-/plugin install benmonopoli/AI-Recruiting-Skills
+/plugin install benmonopoli/open-recruit
 ```
 
 ### Manual install
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/benmonopoli/AI-Recruiting-Skills.git
+   git clone https://github.com/benmonopoli/open-recruit.git
    ```
 2. Copy the skills you need into your AI tool's skills directory
 3. Load a skill and start using it
