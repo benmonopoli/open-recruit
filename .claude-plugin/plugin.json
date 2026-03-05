@@ -1,0 +1,12 @@
+{
+  "name": "open-recruit",
+  "description": "A collection of AI recruiting skills covering sourcing platforms, hiring disciplines across tech, marketing, and sales (48 disciplines), Boolean strings, AI prompts, and community resources.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ben Monopoli",
+    "url": "https://github.com/benmonopoli"
+  },
+  "homepage": "https://github.com/benmonopoli/open-recruit",
+  "repository": "https://github.com/benmonopoli/open-recruit",
+  "license": "MIT"
+}
