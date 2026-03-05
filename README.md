@@ -101,7 +101,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 
 ## Getting started
 
-These skills are designed for use with [Claude](https://claude.ai) by Anthropic — specifically [Claude Code](https://claude.ai/code), Anthropic's CLI tool that supports loading skills directly.
+These skills are designed for use with [Claude](https://claude.ai) by Anthropic — specifically [Claude Code](https://claude.ai/code), Anthropic's CLI tool, and [Claude Cowork](https://claude.ai), Anthropic's cloud-based collaborative workspace. Both support loading skills directly.
 
 ### Install as a plugin (one command)
 
