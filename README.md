@@ -34,7 +34,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 | **ai-recruiting-prompts** | AI prompts and templates for common recruiting workflows. |
 | **greenhouse-recruiting** | Manage candidates, jobs, and pipelines in Greenhouse via the Harvest API. |
 
-### Tech Hiring — `skills/tech-hiring/`
+### Tech Hiring — `plugin/skills/tech-hiring/`
 
 | Skill | Description |
 |-------|-------------|
@@ -51,7 +51,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 | **tech-hiring-search-crawler-infrastructure** | Web crawling, indexing, search ranking, large-scale data collection. |
 | **tech-hiring-browser-extension-engineering** | WebExtensions APIs, cross-browser development, extension architecture. |
 
-### Marketing Hiring — `skills/marketing-hiring/`
+### Marketing Hiring — `plugin/skills/marketing-hiring/`
 
 | Skill | Description |
 |-------|-------------|
@@ -78,7 +78,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 | **marketing-hiring-marketing-leadership** | CMO/VP-level strategy, team building, budget management. |
 | **marketing-hiring-video-marketing** | Video strategy, production, editing, distribution. |
 
-### Sales Hiring — `skills/sales-hiring/`
+### Sales Hiring — `plugin/skills/sales-hiring/`
 
 | Skill | Description |
 |-------|-------------|
