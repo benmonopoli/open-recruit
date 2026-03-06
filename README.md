@@ -105,10 +105,11 @@ These skills are designed for use with [Claude](https://claude.ai) by Anthropic 
 
 ### Install as a plugin (Claude Code)
 
-If you're using Claude Code, run this in your terminal:
+If you're using Claude Code, run these two commands:
 
 ```
-/plugin install benmonopoli/open-recruit
+/plugin marketplace add benmonopoli/open-recruit
+/plugin install open-recruit@benmonopoli
 ```
 
 Installing the plugin loads two things:
