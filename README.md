@@ -34,7 +34,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 | **ai-recruiting-prompts** | AI prompts and templates for common recruiting workflows. |
 | **greenhouse-recruiting** | Manage candidates, jobs, and pipelines in Greenhouse via the Harvest API. |
 
-### Tech Hiring — `plugin/skills/tech-hiring/`
+### Tech Hiring — `skills/tech-hiring/`
 
 | Skill | Description |
 |-------|-------------|
@@ -51,7 +51,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 | **tech-hiring-search-crawler-infrastructure** | Web crawling, indexing, search ranking, large-scale data collection. |
 | **tech-hiring-browser-extension-engineering** | WebExtensions APIs, cross-browser development, extension architecture. |
 
-### Marketing Hiring — `plugin/skills/marketing-hiring/`
+### Marketing Hiring — `skills/marketing-hiring/`
 
 | Skill | Description |
 |-------|-------------|
@@ -78,7 +78,7 @@ From that point the AI isn't working from general knowledge — it's working fro
 | **marketing-hiring-marketing-leadership** | CMO/VP-level strategy, team building, budget management. |
 | **marketing-hiring-video-marketing** | Video strategy, production, editing, distribution. |
 
-### Sales Hiring — `plugin/skills/sales-hiring/`
+### Sales Hiring — `skills/sales-hiring/`
 
 | Skill | Description |
 |-------|-------------|
@@ -138,7 +138,7 @@ A routing engine (`CLAUDE.md`) that reads your request, identifies the relevant 
 
 If you use Claude.ai, ChatGPT, or any other AI tool — no installation needed:
 
-1. Browse the `plugin/skills/` folder and find the skill you want
+1. Browse the `skills/` folder and find the skill you want
 2. Open the `SKILL.md` file and copy the full contents
 3. Paste it at the start of your conversation as context
 
@@ -157,7 +157,7 @@ The library covers what I hire for — there are plenty of disciplines it doesn'
 The best skills are built the same way these were — by synthesising the best available knowledge for that discipline into a reusable format, not just personal opinion. If you've hired in an area not covered here and want to contribute, open a pull request or drop me a message.
 
 To add a skill:
-1. Create a folder under the appropriate category in `plugin/skills/`
+1. Create a folder under the appropriate category in `skills/`
 2. Add a `SKILL.md` file with your skill's instructions
 3. Include a `name` and `description` at the top of the file
 4. Open a pull request with a short description of what the skill does and how you've used it
