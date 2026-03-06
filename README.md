@@ -138,7 +138,7 @@ A routing engine (`CLAUDE.md`) that reads your request, identifies the relevant 
 
 If you use Claude.ai, ChatGPT, or any other AI tool — no installation needed:
 
-1. Browse the `skills/` folder and find the skill you want
+1. Browse the `plugin/skills/` folder and find the skill you want
 2. Open the `SKILL.md` file and copy the full contents
 3. Paste it at the start of your conversation as context
 
@@ -157,7 +157,7 @@ The library covers what I hire for — there are plenty of disciplines it doesn'
 The best skills are built the same way these were — by synthesising the best available knowledge for that discipline into a reusable format, not just personal opinion. If you've hired in an area not covered here and want to contribute, open a pull request or drop me a message.
 
 To add a skill:
-1. Create a folder under the appropriate category in `skills/`
+1. Create a folder under the appropriate category in `plugin/skills/`
 2. Add a `SKILL.md` file with your skill's instructions
 3. Include a `name` and `description` at the top of the file
 4. Open a pull request with a short description of what the skill does and how you've used it
