@@ -9,8 +9,8 @@
       "name": "open-recruit",
       "description": "AI recruiting skills library — 57 disciplines covering sourcing, tech hiring, marketing hiring, and sales hiring. Includes slash commands for sourcing, screening, JDs, interview questions, and outreach.",
       "source": {
-        "source": "github",
-        "repo": "benmonopoli/open-recruit"
+        "source": "git",
+        "url": "https://github.com/benmonopoli/open-recruit.git"
       }
     }
   ]
