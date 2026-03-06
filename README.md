@@ -103,23 +103,43 @@ From that point the AI isn't working from general knowledge — it's working fro
 
 These skills are designed for use with [Claude](https://claude.ai) by Anthropic — specifically [Claude Code](https://claude.ai/code), Anthropic's CLI tool, and [Claude Cowork](https://claude.ai), Anthropic's cloud-based collaborative workspace. Both support loading skills directly.
 
-### Install as a plugin (one command)
+### Install as a plugin (Claude Code)
 
 If you're using Claude Code, run this in your terminal:
 
-```bash
+```
 /plugin install benmonopoli/open-recruit
 ```
 
-This installs the full library in one shot. Once installed, Claude automatically detects the relevant discipline from context and applies the appropriate skill — no manual selection needed.
+Installing the plugin loads two things:
+
+**1. Automatic skill detection**
+A routing engine (`CLAUDE.md`) that reads your request, identifies the relevant discipline, and applies the appropriate skill automatically — no manual selection needed. Ask about sourcing a senior ML engineer and it applies the ML engineering hiring skill and the relevant sourcing skills together. Ask about screening a CSM candidate and it switches to the customer success skill.
+
+**2. Five slash commands for common workflows**
+
+| Command | What it does |
+|---------|-------------|
+| `/open-recruit:source [role]` | Sourcing strings and platform strategy for a specific role |
+| `/open-recruit:screen [role + candidate]` | Structured T1/T2/T3 assessment with a hire/pass recommendation |
+| `/open-recruit:jd [role]` | Job description drafted against discipline-specific criteria |
+| `/open-recruit:interview [role]` | Interview question bank with evaluation signals and follow-ups |
+| `/open-recruit:outreach [role + context]` | InMail, short outreach, and follow-up message for a specific role |
+
+**Example:**
+```
+/open-recruit:source Senior Backend Engineer, distributed systems focus
+/open-recruit:screen Senior Backend Engineer — [paste LinkedIn profile]
+/open-recruit:outreach Senior Backend Engineer — candidate has strong Go and Kafka experience
+```
 
 ### Use individual skills manually
 
-If you'd prefer to use specific skills without installing the full library:
+If you use Claude.ai, ChatGPT, or any other AI tool — no installation needed:
 
-1. Browse the `skills/` folder above and find the skill you want
-2. Open the `SKILL.md` file and copy the contents
-3. Paste it at the start of your conversation with Claude as context
+1. Browse the `skills/` folder and find the skill you want
+2. Open the `SKILL.md` file and copy the full contents
+3. Paste it at the start of your conversation as context
 
 ### Not sure where to start?
 
