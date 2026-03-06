@@ -111,7 +111,7 @@ If you're using Claude Code, run this in your terminal:
 /plugin install benmonopoli/open-recruit
 ```
 
-This installs the full library in one shot. Once installed, the relevant skill loads automatically based on what you ask — no manual selection needed.
+This installs the full library in one shot. Once installed, Claude automatically detects the relevant discipline from context and applies the appropriate skill — no manual selection needed.
 
 ### Use individual skills manually
 
