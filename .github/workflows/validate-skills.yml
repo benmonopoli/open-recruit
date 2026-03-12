@@ -1,0 +1,62 @@
+name: Validate skills
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**/SKILL.md'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check SKILL.md frontmatter
+        run: |
+          failed=0
+
+          while IFS= read -r -d '' file; do
+            has_name=false
+            has_description=false
+            in_frontmatter=false
+            first_line=true
+
+            while IFS= read -r line; do
+              if $first_line; then
+                first_line=false
+                if [ "$line" = "---" ]; then
+                  in_frontmatter=true
+                  continue
+                else
+                  break
+                fi
+              fi
+
+              if $in_frontmatter; then
+                if [ "$line" = "---" ]; then
+                  break
+                fi
+                if echo "$line" | grep -qE '^name:[[:space:]]+.+'; then
+                  has_name=true
+                fi
+                if echo "$line" | grep -qE '^description:[[:space:]]+.+'; then
+                  has_description=true
+                fi
+              fi
+            done < "$file"
+
+            missing=()
+            $has_name || missing+=("name")
+            $has_description || missing+=("description")
+
+            if [ ${#missing[@]} -gt 0 ]; then
+              echo "❌ $file is missing required frontmatter: ${missing[*]}"
+              failed=1
+            fi
+          done < <(find skills -name "SKILL.md" -print0)
+
+          if [ $failed -eq 0 ]; then
+            echo "✅ All SKILL.md files have valid frontmatter"
+          fi
+
+          exit $failed
